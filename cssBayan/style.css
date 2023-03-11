@@ -161,4 +161,8 @@ input[type="radio"]:checked ~ .meme-title i {
   .meme-title i {
     display: none;
   }
+
+  .css-bayan:hover .meme-title {
+    color: black;
+  }
 }
