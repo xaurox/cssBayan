@@ -126,3 +126,35 @@ input[type="radio"]:checked ~ .meme-title i {
     font-size: 2.5rem;
   }
 }
+
+@media (-moz-touch-enabled: 0), (pointer: fine) {
+  input[type="radio"]:hover ~ .meme-container {
+    opacity: 1;
+    max-height: 100rem;
+    overflow: visible;
+  }
+
+  .input-container:hover .meme-container {
+    opacity: 1;
+    max-height: 100rem;
+    overflow: visible;
+  }
+
+  .input-container:hover .meme-title {
+    color: black;
+  }
+
+  .input-container:hover .meme-title i {
+    display: block;
+
+    transform: rotate(0deg);
+  }
+
+  .meme-title {
+    color: blue;
+  }
+
+  .meme-title i {
+    display: none;
+  }
+}
