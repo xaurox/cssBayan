@@ -1,5 +1,14 @@
+@font-face {
+  font-family: "Fira Code";
+  src: url("./font/FiraCode-Bold.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Code";
 }
