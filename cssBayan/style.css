@@ -166,3 +166,9 @@ input[type="radio"]:checked ~ .meme-title i {
     color: black;
   }
 }
+
+.input-container,
+.meme-container,
+.meme-title {
+  cursor: pointer;
+}
