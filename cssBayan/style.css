@@ -79,6 +79,10 @@ input[type="radio"]:checked ~ .meme-container {
   overflow: visible;
 }
 
+input[type="radio"]:checked ~ .meme-title {
+  color: black;
+}
+
 input[type="radio"]:checked ~ .meme-title i {
   transform: rotate(0deg);
 }
