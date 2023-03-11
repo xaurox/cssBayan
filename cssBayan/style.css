@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  min-width: 60rem;
+  max-width: 60rem;
 
   margin: 0 auto;
   padding: 0 0.5rem;
@@ -33,7 +33,7 @@ h1 {
 
 .meme-container {
   opacity: 0;
-  min-height: 0;
+  max-height: 0;
   overflow: hidden;
 
   transition: 0.5s;
@@ -47,7 +47,7 @@ h1 {
 .meme-container img {
   padding: 2rem 0;
 
-  min-width: 30rem;
+  max-width: 30rem;
 }
 
 .meme-title {
@@ -75,10 +75,54 @@ input[type="radio"] {
 
 input[type="radio"]:checked ~ .meme-container {
   opacity: 1;
-  min-height: 100rem;
+  max-height: 100rem;
   overflow: visible;
 }
 
 input[type="radio"]:checked ~ .meme-title i {
   transform: rotate(0deg);
+}
+
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .meme-container img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .meme-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .meme-container img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .meme-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 821px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .meme-container img {
+    max-width: 30rem;
+  }
+
+  .meme-title {
+    font-size: 2.5rem;
+  }
 }
