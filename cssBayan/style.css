@@ -87,18 +87,17 @@ input[type="radio"]:checked ~ .meme-title i {
   transform: rotate(0deg);
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (min-width: 821px) {
   h1 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
   .meme-container img {
-    width: 100%;
-    max-width: 100%;
+    max-width: 40rem;
   }
 
   .meme-title {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -117,17 +116,18 @@ input[type="radio"]:checked ~ .meme-title i {
   }
 }
 
-@media screen and (min-width: 821px) {
+@media screen and (max-width: 380px) {
   h1 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   .meme-container img {
-    max-width: 40rem;
+    width: 100%;
+    max-width: 100%;
   }
 
   .meme-title {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 
