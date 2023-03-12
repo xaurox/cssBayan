@@ -131,7 +131,7 @@ input[type="radio"]:checked ~ .meme-title i {
   }
 }
 
-@media (-moz-touch-enabled: 0), (pointer: fine) {
+@media (hover: hover) {
   input[type="radio"]:hover ~ .meme-container {
     opacity: 1;
     max-height: 100rem;
