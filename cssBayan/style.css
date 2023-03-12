@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Fira Code";
+  src: url("./font/FiraCode-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Code";
+}
+
+.container {
+  max-width: 60rem;
+
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+h1 {
+  text-align: center;
+
+  margin: 2rem 0;
+}
+
+.css-bayan {
+  display: flex;
+  flex-direction: column;
+}
+
+.meme-container {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+
+  transition: 0.5s;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.meme-container img {
+  padding: 2rem 0;
+
+  max-width: 30rem;
+}
+
+.meme-title {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 0.5rem;
+
+  transition: 0.5s;
+}
+
+.meme-title i {
+  transition: 0.5s;
+  transform: rotate(90deg);
+
+  color: black;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked ~ .meme-container {
+  opacity: 1;
+  max-height: 100rem;
+  overflow: visible;
+}
+
+input[type="radio"]:checked ~ .meme-title {
+  color: black;
+}
+
+input[type="radio"]:checked ~ .meme-title i {
+  transform: rotate(0deg);
+}
+
+@media screen and (min-width: 821px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .meme-container img {
+    max-width: 40rem;
+  }
+
+  .meme-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .meme-container img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .meme-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .meme-container img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .meme-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (hover: hover) {
+  input[type="radio"]:hover ~ .meme-container {
+    opacity: 1;
+    max-height: 100rem;
+    overflow: visible;
+  }
+
+  .input-container:hover .meme-container {
+    opacity: 1;
+    max-height: 100rem;
+    overflow: visible;
+  }
+
+  .input-container:hover .meme-title {
+    color: black;
+  }
+
+  .input-container:hover .meme-title i {
+    display: block;
+
+    transform: rotate(0deg);
+  }
+
+  .meme-title {
+    color: blue;
+  }
+
+  .meme-title i {
+    display: none;
+  }
+
+  .css-bayan:hover .meme-title {
+    color: black;
+  }
+
+  .css-bayan:hover .meme-title i {
+    display: block;
+  }
+}
+
+.input-container,
+.meme-container,
+.meme-title {
+  cursor: pointer;
+}
+
+.input-container :active ~ .meme-title,
+.input-container :active ~ .meme-title i {
+  color: red;
+  opacity: 0.8;
+}
+
+.input-container:not(:last-of-type) {
+  padding-bottom: 2rem;
+}
