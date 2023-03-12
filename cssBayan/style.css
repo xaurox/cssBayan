@@ -176,3 +176,9 @@ input[type="radio"]:checked ~ .meme-title i {
 .meme-title {
   cursor: pointer;
 }
+
+.input-container :active ~ .meme-title,
+.input-container :active ~ .meme-title i {
+  color: red;
+  opacity: 0.8;
+}
